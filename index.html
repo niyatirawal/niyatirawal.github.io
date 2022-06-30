@@ -14,6 +14,10 @@
 <body id="top">
 <div id="cv" class="instaFade">
 	<div class="mainDetails">
+		<button class="button", onclick="scrolldiv('awards')">Honours and Awards</button>
+		<button class="button",  onclick="scrolldiv('talks')">Talks</button>
+		<button class="button",  onclick="scrolldiv('publications')">Publications</button>
+		<button class="button",  onclick="scrolldiv('bio')">About Me</button>
 		<div id="headshot" class="quickFade">
 			<img src="pic.png" alt="Niyati Rawal" />
 		</div>
@@ -36,18 +40,73 @@
 		<section>
 			<article>
 				<div class="sectionTitle">
-					<h1>About me</h1>
+					<h1>About Me</h1>
+				</div>
+				
+				<div id="bio", class="sectionContent">
+					<p>I am currently working as an early-stage researcher in the PERSEO project at the University of Modena and Reggio Emilia. My research is on <span class="bolded"> combining vision and language for the application of robotic navigation </span>. Previously, I have worked emotion expressions in Human-Robot Interaction (TU Darmstadt), human activity recognition and prediction (Inria, Nancy), comparison of deontology and utilitarianism in Pac-Man game setting using knowledge representation (Rovira i Virgili University / Open University of Catalonia) as well as the underlying mechanism to explain the development of visual attention to faces during infancy (Osaka University).</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Publications</h1>
+				</div>
+				
+				<div id="publications" , class="sectionContent">
+					<article>
+						<h2>Journal Publications</h2>
+						<p>Niyati Rawal and Ruth Maria Stock-Homburg, <span class="bolded">"Facial emotion expressions in human-robot interaction: A survey"</span>>, International Journal of Social Robotics, 2022.</p>
+						<p>Niyati Rawal, Dorothea Koert, Cigdem Turan, Kristian Kersting, Jan Peters and Ruth Stock-Homburg, <span class="bolded">"ExGen Net: Learning to Generate Robotic Facial Expressions using Facial Expression Recognition"</span>, 2022.</p>
+						<h2>Workshop Publications</h2>
+						<p>Yukie Nagai and Niyati Rawal, <span class="bolded">“Where and Why Infants Look: A recurrent neural network for the development of visual attention”</span>, in Proceedings of the 21st Biennial International Congress on Infant Studies, June 30-July 3, 2018.</p>
+						<p>Niyati Rawal and Yukie Nagai, <span class="bolded">"Computational Modelling Approach to Investigate the Development of Scan Paths in Infants"</span>, The 6th Symposium of Japanese Society of Developmental Neuroscience, November 25-26, 2017.</p>
+						<p>Niyati Rawal, Takato Horii, and Yukie Nagai, <span class="bolded">"How does visual attention to face develop in infancy?: A computational account"</span>, in Proceedings of the HAI 2017 Workshop on Representation Learning for Human and Robot Cognition, October 17, 2017.</p>
+					</article>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Talks</h1>
+				</div>
+				
+				<div id="talks", class="sectionContent">
+					<p>TBA</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<article>
+				<div id="awards", class="sectionTitle">
+					<h1>Honours and Awards</h1>
 				</div>
 				
 				<div class="sectionContent">
-					<p>I am currently working as an early-stage researcher in the PERSEO project at the University of Modena and Reggio Emilia. My research is on combining vision and language for the application of robotic navigation.</p>
+					<article>
+						<h2>Scholarship</h2>
+						<p>Marie Skolodowska-Curie Actions Fellowship - PERSEO Project</p>
+						<p>Monbukagakusho (MEXT) Scholarship: Received 5 year scholarship by the Japanese Government to pursue my bachelor degree in Japan</p>
+						<p>CJM PTA Schoalrship for consistent effort (2010)</p>
+						<p>CJM PTA Schoalrship for consistent effort (2009)</p>
+						<h2>Competitions</h2>
+						<p>RoboCup Japan Open (2017): It is a robot soccer league where the robots operate autonomously. Our team JoiTech won the first prize.</p>
+					</article>
 				</div>
 			</article>
 			<div class="clear"></div>
 		</section>
 		
 		
-		<section>
+		<!--<section>
 			<div class="sectionTitle">
 				<h1>Work Experience</h1>
 			</div>
@@ -100,7 +159,7 @@
 			<div class="sectionContent">
 				<article>
 					<h2>Rovira i Virgili University</h2>
-					<p class="subDetails">Master's degree in Computational Engineering and Mathematics/p>
+					<p class="subDetails">Master's degree in Computational Engineering and Mathematics</p>
 				</article>
 				
 				<article>
@@ -109,8 +168,14 @@
 				</article>
 			</div>
 			<div class="clear"></div>
-		</section>
+		</section>-->
 	</div>
 </div>
+<script>
+   function scrolldiv(section) {
+                var elem = document.getElementById(section);
+                elem.scrollIntoView();
+            }
+</script>
 </body>
 </html>
