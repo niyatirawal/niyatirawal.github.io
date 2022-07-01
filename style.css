@@ -48,6 +48,10 @@ p {
   float: right;
 }
 
+li:hover {
+    cursor: pointer;
+}
+
 #name h1 {
 	font-size: 2.5em;
 	font-weight: 700;
